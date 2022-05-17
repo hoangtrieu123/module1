@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Cạnh a: <input id="canha" type="text"> <br><br>
+Diện tích hình chữ nhật là: <span id="result"></span> <br> <br>
+<button onclick="test()"> Tính </button>
+</body>
+<script>
+    function test(){
+        let a = document.getElementById("canha").value
+        let area = Math.pow(a,2)
+        document.getElementById("result").innerHTML = area
+    }
+</script>
+</html>

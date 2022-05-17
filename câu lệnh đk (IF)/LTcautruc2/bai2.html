@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Mét: <input id="id1" type="text"> <br> <br>
+feet: <span id="result"></span> <br> <br>
+<button onclick="test()">Convert</button>
+</body>
+<script>
+    function test(){
+        let a = parseFloat(document.getElementById("id1").value)
+        let ft = a * 3.2808
+        document.getElementById("result").innerHTML = ft
+    }
+</script>
+</html>

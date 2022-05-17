@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số a: <input id="a" type="text"> <br> <br>
+Số b: <input id="b" type="text"> <br> <br>
+Số c: <input id="c" type="text"> <br> <br>
+Số lớn nhất là: <span id="result"></span> <br> <br>
+<button onclick="test()"> Kiểm tra</button>
+</body>
+<script>
+    function test() {
+        let a = parseInt(document.getElementById("a").value)
+        let b = parseInt(document.getElementById("b").value)
+        let c = parseInt(document.getElementById("c").value)
+        if (a > b && a > c)
+            document.getElementById("result").innerHTML = "A"
+        if (b > a && b > c)
+            document.getElementById("result").innerHTML = "B"
+        if (c > a && c > b)
+            document.getElementById("result").innerHTML = "C"
+    }
+</script>
+</html>

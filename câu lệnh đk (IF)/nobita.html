@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+<img id="anh" style="position:absolute;left: 0; top: 0"
+     src="https://james.codegym.vn/pluginfile.php/64922/mod_assign/intro/1.png" alt="">
+</body>
+<script>
+    function up() {
+        var up = document.getElementById("anh")
+        up.style.top = parseInt(up.style.top) - 5 + "px"
+    }
+
+    function dow() {
+        var dow = document.getElementById("anh")
+        dow.style.bottom = parseInt(dow.style.bottom) + 5 + "px"
+    }
+
+    function left() {
+        var left = document.getElementById("anh")
+        left.style.left = parseInt(left.style.left) - 5 + "px"
+    }
+
+    function right() {
+        var right = document.getElementById("anh")
+        right.style.right = parseInt(right.style.right) + 5 + "px"
+    }
+
+    function moveSelection(evt) {
+        switch (evt.key) {
+            case 37:
+                left()
+                break
+            case 39:
+                right()
+                break
+            case 38:
+                up()
+                break
+            case 40:
+                dow()
+                break
+        }
+
+
+    } function docReady() {
+        window.addEventListener("Keydown", moveSelection)
+    }
+
+</script>
+</html>

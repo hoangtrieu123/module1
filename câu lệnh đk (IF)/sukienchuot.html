@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        button {
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<img id="anh" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" alt="">
+<font size="5"><b><p>Click button below to move the image to right</p></b></font>
+<button onclick="move()"> Move</button>
+</body>
+<script>
+    let ob = document.getElementById("anh")
+
+    function khoitao() {
+        ob = document.getElementById("anh")
+        ob.style.position = "relative"
+        ob.style.top = "0px"
+        ob.style.left = "0px"
+    }
+
+    function move() {
+        ob.style.top = parseInt(ob.style.top) + 10 + "px"
+        ob.style.left = parseInt(ob.style.left) + 10 + "px"
+    }
+
+    window.onload = khoitao
+</script>
+</html>

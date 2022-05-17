@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập tuổi: <input id="age" type="text"> <br> <br>
+<button onclick="test()"> Kiểm tra</button>
+<p id="result"></p>
+</body>
+<script>
+    function test() {
+        let a = document.getElementById("age").value
+        if (a < 16) {
+            document.getElementById("result").innerHTML = "Không đủ điều kiện"
+        } else
+            document.getElementById("result").innerHTML = "Đủ điều kiện"
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập vào số: <input id="numb" type="text"> <br> <br>
+Tổng của dãy số là: <span id="result"></span> <br> <br>
+<button onclick="test()"> Tổng</button>
+</body>
+<script>
+    function test() {
+        let a = 0
+        let c = parseFloat(document.getElementById("numb").value)
+            for (i = 0;i<=c ; i++){
+                a = a + i
+            }
+        document.getElementById("result").innerHTML = "Tồng từ 0 đến " + c + " là " + a
+    }
+
+
+</script>
+</html>

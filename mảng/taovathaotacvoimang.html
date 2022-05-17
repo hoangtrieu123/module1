@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="id1">
+<button onclick="them()">Add</button>
+<button onclick="display()">Display</button>
+<p id="result"></p>
+</body>
+<script>
+    let a = 0
+    let array = Array()
+    function them() {
+         array[a] = document.getElementById("id1").value
+        alert("Số: " + array[a] + " Được thêm vào " + a)
+        a++
+    }
+        function display(){
+        let e =""
+            for (let i = 0; i < array.length; i++) {
+                e += "Giá trị " + i + " = " + array[i] + "<br>"
+            }
+            document.getElementById("result").innerHTML = e
+        }
+</script>
+</html>

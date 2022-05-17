@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Doanh số bán hàng: <input id="id1" type="text"> <br> <br>
+Hoa hồng của bạn là: <span id="result"></span> <br> <br>
+<button onclick="tinh()"> Tính</button>
+</body>
+<script>
+    function tinh() {
+        let a = parseInt(document.getElementById("id1").value)
+        if (a > 1000000)
+            document.getElementById("result").innerHTML = "Hoa hồng của bạn là 10%"
+        if (a > 5000000)
+            document.getElementById("result").innerHTML = "Hoa hồng của bạn là 50%"
+        if (a > 10000000)
+            document.getElementById("result").innerHTML = "Hoa hồng của bạn là 100%"
+            }
+</script>
+</html>

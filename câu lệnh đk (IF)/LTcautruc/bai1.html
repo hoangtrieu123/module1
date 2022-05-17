@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số a: <input id="soa" type="text"> <br> <br>
+Số b: <input id="sob" type="text"> <br> <br>
+<button onclick="test()"> Kiểm tra</button>
+<p id="result"></p>
+</body>
+<script>
+    function test(){
+        let a = parseFloat(document.getElementById("soa").value)
+        let b = parseFloat(document.getElementById("sob").value)
+        if (a % b == 0){
+            document.getElementById("result").innerHTML = "chia hết"
+        }else {
+            document.getElementById("result").innerText = "Không chia hết"
+        }
+    }
+
+</script>
+</html>
